@@ -15,13 +15,13 @@ return(
             <NavLink to="/" className="nav-link me-auto ">Inicio</NavLink>
           </li>
           <li className="nav-item">
-            <NavLink to="/category/shonen" className="nav-link me-auto">Shonen</NavLink>
+            <NavLink to="./category/shonen" className="nav-link me-auto">Shonen</NavLink>
           </li>
          <li className="nav-item">
-            <NavLink to="/category/deportes" className="nav-link me-auto">Deportes</NavLink>
+            <NavLink to="./category/deportes" className="nav-link me-auto">Deportes</NavLink>
          </li>
         <li className="nav-item">
-           <NavLink to="/category/populares" className="nav-link me-auto">Populares</NavLink>
+           <NavLink to="./category/populares" className="nav-link me-auto">Populares</NavLink>
         </li>
       </ul>
     </div>

@@ -8,15 +8,15 @@ const ItemList = ({ items, isLoading }) => {
 
   return (
     <div>
-      <h1>ItemList</h1>
+      <h1>Lanzamiento</h1>
 
       <ul>
         {items.map((item) => (
           <li key={item.id}>
             <Link to={`/item/${item.id}`}>
-              <h3>{item.name}</h3>
+              <h3>{item.title}</h3>
               <p>${item.price}</p>
-              <p>{item.category}</p>
+              <p>{item.categoryId}</p>
             </Link>
           </li>
         ))}
