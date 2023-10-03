@@ -1,0 +1,41 @@
+.card-container ul li{
+    list-style: none;
+}
+
+.card-container ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.card-container ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card{
+    border: solid;
+    border-color: whitesmoke;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem;
+    margin-left: 10rem;
+}
+
+.card h2{
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+
+.card a{
+    width: 55%;
+}
+
+.card:hover{
+    -webkit-box-shadow: 10px 10px 39px -1px rgba(143,143,143,0.65);
+-moz-box-shadow: 10px 10px 39px -1px rgba(228, 133, 191, 0.65);
+box-shadow: 10px 10px 39px -1px rgba(228, 133, 191, 0.65);
+}
+
+

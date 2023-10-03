@@ -1,0 +1,18 @@
+.card-detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.2rem;
+    padding: 3%;
+    margin: 3%;
+}
+
+.card-detail .price-detail{
+    font-weight: bold;
+    font-size: 2rem;
+    
+}
+.card-detail button{
+    border: none;
+    background-color: pink;
+}
