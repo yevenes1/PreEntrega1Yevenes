@@ -1,8 +1,8 @@
 import { useState, useEffect, useContext } from "react";
 import { useParams } from "react-router-dom";
-import { getProduct } from "../services";
+import { getProduct } from "../../services";
 import ItemDetail from "./ItemDetail";
-import CartContext from "../context/CartContext";
+import CartContext from "../../context/CartContext";
 
 const ItemDetailContainer = () => {
   const [item, setItem] = useState(null);
@@ -24,7 +24,7 @@ const ItemDetailContainer = () => {
       });
   }, [id]);
 
-  return <ItemDetail item={item} isLoading={isLoading} addItem={addItem}/>;
+  return <ItemDetail item={item} isLoading={isLoading} addItem={addItem} />;
 };
 
 export default ItemDetailContainer;

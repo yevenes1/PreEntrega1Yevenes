@@ -10,8 +10,6 @@ const CartProvider = ({ children }) => {
   };
 
   const addItem = (product, quantity) => {
-   
-
     const itemInCart = isInCart(product.id);
 
     if (itemInCart) {
@@ -27,7 +25,6 @@ const CartProvider = ({ children }) => {
       });
       setCart(newCart);
     } else {
-    
       setCart([...cart, { ...product, quantity }]);
     }
   };
