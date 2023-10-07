@@ -11,6 +11,10 @@
     width: 100%;
   }
 
+
+  .container ul {
+    list-style: none;
+  }
   .list-detalle {
     display: flex;
     text-align: center;
