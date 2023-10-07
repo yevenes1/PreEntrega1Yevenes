@@ -1,4 +1,7 @@
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom"
+import styles from "./ItemDetail.module.css"
+
 
 const ItemDetail = ({ item, isLoading, addItem }) => {
   if (isLoading) {
@@ -10,13 +13,19 @@ const ItemDetail = ({ item, isLoading, addItem }) => {
   }
 
   return (
-    <div>
-      <h1>{item.title}</h1>
-      <p>{item.description}</p>
+    <div className={styles['product-container']}>
+      <h1 className={styles['product-name']}>{item.title}</h1>
+      <img src={`/img/${item.imageId}`} className={styles['product/image']}/>
+      <p className={styles['product-detalle']}>{item.description}</p>
       <p>${item.price}</p>
       <p>Stock: {item.stock}</p>
       <p>Categoría: {item.categoryId}</p>
-      <button onClick={() => addItem(item, 1)}>Agregar al carrito</button>
+      <button className={styles['boton-agregar']} onClick={() => addItem(item, 1)}>Agregar al carrito</button>
+      
+
+      <Link to="/">
+        <button className={styles['btn-volver']}>Volver</button>
+      </Link>
     </div>
   );
 };
