@@ -1,10 +1,11 @@
 import { useContext } from "react";
-import CartContext from "../context/CartContext";
+import CartContext from "../../context/CartContext";
 
 const Cart = () => {
-    const { cart } = useContext(CartContext);
+    const { cart, removeItem, clearCart } = useContext(CartContext);
 
-    return (
+    const isEmpty a
+    return (    
         <div>
             <h1>Cart</h1>
 
