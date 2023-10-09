@@ -10,8 +10,6 @@ const ItemList = ({ items, isLoading }) => {
   return (
     <div className={styles['container']}>
 
-      <Link to="/checkout">Ir a pagar</Link>
-
       <ul>
         {items.map((item) => (
           <li key={item.id}>

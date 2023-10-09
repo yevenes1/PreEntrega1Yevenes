@@ -19,7 +19,7 @@ const NavBar = () => {
                     </li>
                 </ul>
 
-                    <NavLink to="/cart">
+                    <NavLink to="/checkout">
                         <CartWidget />
                     </NavLink>
             

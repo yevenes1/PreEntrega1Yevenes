@@ -4,6 +4,7 @@ import CartContext from "../../context/CartContext";
 import { getCartTotal, mapCartToOrderItems } from "../../utils";
 import { serverTimestamp } from "firebase/firestore";
 import { createOrder  } from "../../services";
+import styles from "./CheckOut.module.css"
 
 const CheckOut = () => {
     const [orderId, setOrderId] = useState(null);
@@ -37,8 +38,15 @@ const CheckOut = () => {
             {orderId && <p>El id de la orden es: {orderId}</p>}
             {!orderId && (
               <>  
-                <div>
+                <div className={styles['container']}>
                     <h4>formulario de contacto</h4>
+                    
+                    <div>
+                        <input name="name" type="text" className={styles['feedback-input']} placeholder="Name" />   
+                        <input name="email" type="text" className={styles['feedback-input']} placeholder="Email" />
+                        <input name="celular" type="tel" className={styles['feedback-input']} placeholder="Tel" />
+
+                    </div>
                 </div> 
                 
 

@@ -15,11 +15,10 @@ const ItemDetail = ({ item, isLoading, addItem }) => {
   return (
     <div className={styles['product-container']}>
       <h1 className={styles['product-name']}>{item.title}</h1>
-      <img src={`/img/${item.imageId}`} className={styles['product/image']}/>
+      <img src={`/img/${item.imageId}`} />
       <p className={styles['product-detalle']}>{item.description}</p>
       <p>${item.price}</p>
       <p>Stock: {item.stock}</p>
-      <p>Categoría: {item.categoryId}</p>
       <button className={styles['boton-agregar']} onClick={() => addItem(item, 1)}>Agregar al carrito</button>
       
 
