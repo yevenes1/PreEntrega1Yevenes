@@ -1,11 +1,11 @@
-
 .container {
   box-sizing: border-box;
   border-radius: 5px;
   padding: 20px;
-  border: 2px solid pink;
+  border: 2px solid salmon;
   max-width:420px; 
   margin:50px auto;
+  text-align: center;
   }
   
 
@@ -14,7 +14,7 @@
     font-size: 18px;
     border-radius: 5px;
     line-height: 22px;
-    border:2px solid pink;
+    border:2px solid salmon;
     transition: all 0.3s;
     padding: 13px;
     margin-bottom: 10px;
@@ -23,3 +23,75 @@
     outline:0;
   }
   
+
+  .container-resume{
+    text-align: center;
+  }
+ 
+  .li-cart {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    border: solid 1px gray;
+    box-shadow: 2px 2px 4px black;
+    width: 60%;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+.img-cart {
+  object-fit: cover;
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+  margin-left: 50px;
+  border-radius: 10px;
+  border: solid 1px gray;
+  box-shadow: 2px 2px 4px salmon;
+}
+
+.cant-cart {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+
+.name-cart {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  margin-top: 35px;
+  font-size: 1.5rem;
+  text-decoration: underline salmon;
+}
+
+
+.price-cart {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;    
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+  .products-container{
+    text-align: center;
+  }
+
+.total-compra{
+    border: solid 1px gray;
+    box-shadow: 2px 2px 4px black;
+    width: 60%;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 20px;
+    text-align: center;
+  }
+
+  .fin-btn{
+    background-color: salmon;
+  }
