@@ -8,12 +8,12 @@ import App from './App.jsx'
 import './index.css'
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAAI7lnb-Hhet6_DPcyB0oTDq960aAaOdo",
-  authDomain: "mangaestore-e5039.firebaseapp.com",
-  projectId: "mangaestore-e5039",
-  storageBucket: "mangaestore-e5039.appspot.com",
-  messagingSenderId: "498856586139",
-  appId: "1:498856586139:web:2363b1c75555b29e1dcf3e"
+  apiKey: import.meta.env.VITE_FIRESTORE_API_KEY,
+  authDomain: import.meta.env.VITE_FIRESTORE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIRESTORE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIRESTORE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIRESTORE_MESSAGIN_SENDER_ID,
+  appId: import.meta.env.VITE_FIRESTORE_APP_ID,
 };
 
 initializeApp(firebaseConfig);
