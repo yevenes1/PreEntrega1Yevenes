@@ -9,19 +9,20 @@ const ItemList = ({ items, isLoading }) => {
 
   return (
     <div className={styles['container']}>
-
-      <ul>
-        {items.map((item) => (
-          <li key={item.id}>
-            <Link to={`/item/${item.id}`}>
-              <h3 className={styles['list-name']}>{item.title}</h3>
-              <img src={`/img/${item.imageId}`} />
-              <p>${item.price}</p>
-              <p>{item.categoryId}</p>
-            </Link>
-          </li>
-        ))}
-      </ul>
+        <ul>
+          {items.map((item) => (
+            <li key={item.id} className="card mb-3">
+              <Link to={`/item/${item.id}`}>
+              <img src={`/img/${item.imageId}`} className="card-img-top"/>
+                <div className="card-body">
+                  <h3 className="card-title">{item.title}</h3>
+                  <p className="card-text">${item.price}</p>
+                  <p className="card-text">{item.categoryId}</p>
+                  </div>
+              </Link>
+            </li>
+          ))}
+        </ul>
     </div>
   );
 };
